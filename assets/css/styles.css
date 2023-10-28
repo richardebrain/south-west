@@ -1,147 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 20 |       color: $primary-green-text !important;
+ *    |              ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass/layout/_header.scss 20:14  @import
+ *   sass/main.scss 4:9              root stylesheet */
 
-.header {
-  height: 92px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: rgba(30, 30, 30, 0.75);
-  background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(232, 232, 232, 0.25);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 20 \2502        color: $primary-green-text !important;\a    \2502               ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass/layout/_header.scss 20:14  @import\a   sass/main.scss 4:9              root stylesheet";
 }
-.header .header__nav .header__list {
-  display: flex;
-  gap: 50px;
-  font-style: normal;
-}
-
-.header__item.header__item_active a {
-  color: rgb(21, 91, 31) !important;
-}
-
-.header__has-sub-item {
-  position: relative;
-}
-
-.header__sub-item {
-  display: flex;
-  visibility: hidden;
-  flex-direction: column;
-  padding: 38px 0px 24px 0px;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 8px;
-  position: absolute;
-  z-index: 50;
-  top: 40px;
-  background-color: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(232, 232, 232, 0.25);
-}
-.header__sub-item li > a {
-  display: flex;
-  align-items: center;
-  width: 293px;
-  padding: 12px 20px 13px 40px;
-}
-.header__sub-item li > a.greenBg {
-  background-color: rgb(21, 91, 31);
-  color: white !important;
-}
-.header__sub-item a {
-  color: rgba(30, 30, 30, 0.75) !important;
-}
-.header__sub-item.header__sub-item_active {
-  visibility: visible;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 113px;
-}
-
-.footer {
-  background-color: rgb(21, 91, 31);
-}
-
-.footer__container {
-  height: 516px;
-  margin: 0 auto;
-  padding: 76px 113px;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-direction: column;
-}
-
-.footer__header {
-  color: #fff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.footer__body {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.footer__body .footer__elem {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-.footer__body .footer__elem .footer__sub-title {
-  color: #ffd020;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.footer__details {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.75);
-}
-.footer__details .footer__address {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footer__details a {
-  color: rgba(255, 255, 255, 0.75) !important;
-}
-
-.footer__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.footer__list a {
-  color: rgba(255, 255, 255, 0.75) !important;
-}
-
-.footer__socials {
-  display: flex;
-  gap: 39px;
-}
-.footer__socials img {
-  width: 32px;
-  height: 32px;
-}
-
-a {
-  color: rgba(30, 30, 30, 0.75);
-}
-
-/*# sourceMappingURL=styles.css.map */
