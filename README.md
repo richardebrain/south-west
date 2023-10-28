@@ -27,3 +27,8 @@ Note : Do not edit the styles.css file directly as it will be overwritten by sas
 ## Live Server
 
 Navigate into the dist folder and right click on the index.html file and select "Open with Live Server" to view the website.
+
+### Tasks Assigned to each member
+
+- Josheph (aka Bigbrothers) - Leadership/Regional Executive council
+- Naomi - About-us/history

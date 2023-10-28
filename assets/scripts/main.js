@@ -1,3 +1,21 @@
+// (() => {
+//   let components = document.querySelectorAll("[data-component]");
+//   console.log(components);
+//   const renderComponent = async (comp) => {
+//     console.log(comp);
+//     try {
+//       const { component } = comp.dataset;
+//       const componentPath = `./components/${component}.html`;
+//       const getComponent = await fetch(componentPath);
+//       const convertToHTML = await getComponent.text();
+//       comp.innerHTML = convertToHTML;
+//     } catch (error) {
+//       throw new Error("Failed to render component");
+//     }
+//   };
+//   components.forEach(renderComponent);
+// })();
+
 const HeadersWithSubMenus = document.querySelectorAll(".header__has-sub-item");
 const headerSubMenuItem = document.querySelectorAll(".header__sub-item li");
 let currentlyOpenSubmenu = null;
